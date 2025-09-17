@@ -1,0 +1,270 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 80px;
+    background: #057a55;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    flex: 10%;
+    margin-left: 10%;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.menu{
+    flex: 50%;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+}
+#btn-criar-perfil{
+    margin-left: 20%;
+    background: #005568;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.headline{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.headline-text{
+    flex: 40%;
+    margin-left: 10%;
+}
+.headline-text h1{
+    font-size: 50px;
+}
+.headline-text h2{
+    font-size: 20px;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    font-weight: normal;
+}
+.headline-img{
+    margin-right: 10%;
+    flex: 40%;
+}
+.headline-text a{
+    text-decoration: none;
+    color: white;
+    background: #005568;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+.section-servicos{
+    padding: 100px 20px;
+    background: #fff;
+    text-align: center;
+}
+.section-servicos h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.servicos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.card-servico{
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    width: 400px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-servico:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.card-servico img{
+    width: 60px;
+    padding: 10px;
+    background: rgb(226, 232, 237);
+    border-radius: 50%;
+}
+.card-servico h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.card-servico h4{
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.card-servico h3{
+    font-size: 15px;
+    color: #333;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.section-como-funciona{
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+}
+.section-como-funciona h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.como-funciona{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.card-como-funciona{
+    width: 300px;
+    padding: 30px 20px;
+}
+.card-como-funciona img{
+    width: 50px;
+}
+.card-como-funciona h4{
+    margin: 10px 0px;
+}
+.card-como-funciona h5{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.section-planos{
+    padding: 100px;
+    background: #fff;
+    text-align: center;
+}
+.section-planos h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.planos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.card-plano{
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    width: 400px;
+    padding: 30px 30px;
+}
+.card-plano h2{
+    font-size: 25px;
+}
+.card-plano h3{
+    font-weight: normal;
+    color: #818181;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.preco-mes::after{
+    content: '/mês';
+    font-weight: normal;
+    font-size: 20px;
+}
+.card-plano h4{
+    font-size: 25px;
+}
+.lista-recursos{
+    list-style: none;
+    font-size: 16px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.lista-recursos li{
+    margin-bottom: 8px;
+    display: flex;
+}
+.lista-recursos li::before{
+    content: '✔';
+    color: #28a745;
+    margin-right: 8px;
+}
+.lista-recursos li.x::before{
+    content: '✖';
+    color: #ccc;
+}
+.btn-escolher-plano{
+    text-decoration: none;
+    color: white;
+    background: #057a55;
+    padding: 2% 35%;
+    border-radius: 5px;
+}
+
+.section-depoimentos{
+    padding: 20px;
+    background: #fff;
+}
+.section-depoimentos h1{
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.depoimentos{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.card-depoimento{
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    width: 400px;
+    padding: 30px;
+    background: #fff;
+}
+.usuario{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.avatar{
+  background: #e6f4ec;
+  color: #057a55;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.card-depoimento h2{
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-depoimento h3{
+  margin-top: 2px;
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+.card-depoimento p{
+  font-style: italic;
+  line-height: 1.5;
+  color: #333;
+}
