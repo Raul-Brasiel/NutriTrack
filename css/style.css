@@ -146,6 +146,9 @@
 .section-como-funciona{
     padding: 20px;
     text-align: center;
+    background: #ffdac7;
+    border-radius: 20px;
+    margin: 0px 1%;
 }
 .section-como-funciona h1{
     font-size: 32px;
@@ -245,6 +248,8 @@
 .section-depoimentos{
     padding: 20px;
     background: #ffdac7;
+    border-radius: 10px;
+    margin: 0 1%;
 }
 .section-depoimentos h1{
     font-size: 32px;
@@ -401,5 +406,18 @@
     #btn-criar-perfil{
         display: inline;
         margin-left: 70%;
+    }
+}
+@media screen and (max-width: 630px){
+    .navbar{
+        display: none;
+    }
+    .headline-text h1{
+        color: white;
+        margin-top: 10%;
+    }
+    .btn-escolher-plano{
+        padding-right: 20%;
+        padding-left: 20%;
     }
 }
