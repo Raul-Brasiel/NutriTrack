@@ -1,0 +1,67 @@
+.main_nutricionistas {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.section_nutricionistas {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.main_nutricionistas h1,h2 {
+  color: #4caf50;
+  text-align: center;
+}
+
+.form_cadastroNutricionista,.form_login {
+  display: flex;
+  flex-direction: column;
+}
+
+.label_dado_nutricionista,.label_login {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.campo_nutricionista,.campo_login {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button_enviar {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button_enviar:hover {
+  background-color: #45a049;
+}
+
+.erro {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .section_nutricionistas {
+    width: 90%;
+  }
+}
